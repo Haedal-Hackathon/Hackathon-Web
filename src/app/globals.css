@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f7fc;
+  --foreground: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', 'Outfit', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbars for dashboard views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Slider custom styles */
+input[type="range"]::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #10b981;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgb(16 185 129 / 0.1), 0 2px 4px -2px rgb(16 185 129 / 0.1);
+  transition: all 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #059669;
+}
